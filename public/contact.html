@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/services.html">Services</a>
+            <a href="/testimonials.html">Testimonials</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="form-container">
+                <form 
+                action="https://formspree.io/f/xldbgdwb"
+                method="POST"
+              >
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="phone" id="phone" name="phone" required><br>
+                <label for="service">Select a Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="Basic TV/Monitor Mounting - $79.99">Basic TV/Monitor Mounting - $79.99</option>
+                    <option value="Premium Mounting with Wire Concealment - $129.99">Premium Mounting with Wire Concealment - $129.99</option>
+                    <option value="Custom Installations">Custom Installations - Contact Us</option>
+                    <option value="Other">Other - Contact us for quote</option>
+                </select><br>
+
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required placeholder="Please input your order or question here. If requesting a service, place address here"></textarea><br>
+                <label for="date">Date of Service: </label>
+                <input type="date" id="date" name="date" required><br>
+                
+                <script>
+                  const today = new Date().toISOString().split('T')[0];
+                  document.getElementById('date').value = today;
+
+
+                </script>
+
+  
+                
+                <button type="submit">Send</button>
+
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cusyns</p>
+    </footer>
+</body>
+</html>
