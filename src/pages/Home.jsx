@@ -1,5 +1,5 @@
 import React from 'react';
-import "../pages/pageStyles.css";
+import "./PageStyles.css";
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import Logo from "/Cusyns.png"
